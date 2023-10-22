@@ -1,0 +1,170 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+h1 {
+    margin:  0;
+}
+
+p {
+    margin: 2px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.App {
+
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    background-color: #3876FC;
+
+
+    justify-content: center;
+    align-items: flex-start;
+    padding:  5% 0;
+
+}
+
+.TodoContainer {
+    height: fit-content;
+    width: 50vw;
+    background-color: #42208C;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.5em;
+
+    padding: 30px 0;
+    gap: 10px;
+    
+
+    box-shadow: 13px 10px 53px -14px rgba(0,0,0,0.92);
+    -webkit-box-shadow: 13px 10px 53px -14px rgba(0,0,0,0.92);
+    -moz-box-shadow: 13px 10px 53px -14px rgba(0,0,0,0.92);
+}
+
+.TodoForm {
+    height: fit-content;
+    width: 70%;
+    display: flex;
+
+    align-items: center;
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.TodoFormInput {
+    width: 80%;
+    height: 100%;
+    background-color: black;
+}
+
+.TodoFormInput form {
+    height: 43px;
+    width: 100%;
+}
+
+.TodoFormInput form input {
+    height: 100%;
+    width: 100%;
+
+    font-size: 0.75em;
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    color: white;
+}
+
+.TodoFormInput form input:focus {
+    outline: none;
+    caret-color: transparent;
+
+}
+
+.TodoFormInput form input::placeholder {
+    color: rgb(120, 69, 201); /* Change la couleur du placeholder en rouge */
+    font-style: italic; /* Met le texte du placeholder en italique */
+}
+
+.TodoFormButton {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.TodoFormButton button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.SingleTodoContainer {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.SingleTodo {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.SingleTodoText {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.SingleTodoText p {
+    margin: 0 0 0 15px;
+}
+
+.SingleTodoButton{
+    width: 30%;
+    height: 100%; 
+    border-left: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.SingleTodoButton button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+}
+
+
+.ResetButtonContainer {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
